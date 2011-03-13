@@ -1,0 +1,1 @@
+This is going to be a general admin page for those who are bored to death creating one for themselves.
