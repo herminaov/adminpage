@@ -33,15 +33,11 @@ body{font:14px/1.5 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-sma
 .size2of7{width:28.5714286%;}
 .lastUnit{display:table-cell;float:none;width:auto;*display:block;*zoom:1;_position:relative;_left:-3px;_margin-right:-3px;}
 
-._border-radius(@value: 3px) {
-  boder-radius: @value;
-  -moz-border-radius: @value;
-  -webkit-border-radius: @value;
-}
+@green: #7BCC70;
 
 header {
   height: 64px;
-  background: #7BCC70;
+  background: @green;
   .logo {
     float: left;
     height: 64px;
@@ -53,18 +49,28 @@ header {
   }
 }
 
-.line {
+.content {
   margin: 8px;
   font-size: 16px;
-  .size1of7 {
-    menu {
-      text-align: right;
-      li {
-        border-bottom: 1px solid #7BCC70;
-      }
-    }
+}
+menu {
+  text-align: right;
+  line-height: 2em;
+  a, a:active {
+    text-decoration: none;
+    color: black;
+    display: block;
   }
-  .lastUnit {
-    padding-left: 35px;
+  a:hover {
+    background-color: @green;
+  }
+  a:active {
+    background-color: @green;
+  }
+  li {
+    border-bottom: 1px solid @green;
   }
 }
+.rightcolumn {
+  padding-left: 165px;
+  }
