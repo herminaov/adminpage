@@ -33,17 +33,19 @@ body{font:14px/1.5 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-sma
 .size2of7{width:28.5714286%;}
 .lastUnit{display:table-cell;float:none;width:auto;*display:block;*zoom:1;_position:relative;_left:-3px;_margin-right:-3px;}
 
-@green: #7BCC70;
+
 
 header {
   height: 64px;
-  background: @green;
+  background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0, #960DAB), color-stop(0.5, #27BAD0), color-stop(1, #FA4496));
+  background-image: -moz-linear-gradient(left center, #960DAB 0%, #27BAD0 50%, #FA4496 100%);
   .logo {
     float: left;
     height: 64px;
     width: 160px;
   }
   span {
+    color: white;
     float: right;
     margin: 40px 10px 5px 0;
   }
@@ -54,21 +56,30 @@ header {
   font-size: 16px;
 }
 menu {
-  text-align: right;
   line-height: 2em;
   a, a:active {
     text-decoration: none;
     color: black;
     display: block;
+    padding-left: 5px;
   }
   a:hover {
-    background-color: @green;
-  }
-  a:active {
-    background-color: @green;
+    background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0, #960DAB), color-stop(0.5, #27BAD0), color-stop(1, #FA4496));
+    background-image: -moz-linear-gradient(left center, #960DAB 0%, #27BAD0 50%, #FA4496 100%);
+    color: white;
   }
   li {
-    border-bottom: 1px solid @green;
+    border-bottom: 1px solid #FF0066;
+  }
+  .button {
+    width: 159px;
+    line-height: 2.5em;
+    background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0, #960DAB), color-stop(0.5, #27BAD0), color-stop(1, #FA4496));
+    background-image: -moz-linear-gradient(left center, #960DAB 0%, #27BAD0 50%, #FA4496 100%);
+    font-weight: bold;
+    a {
+    color: white;
+    }
   }
 }
 .rightcolumn {
