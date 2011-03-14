@@ -37,8 +37,7 @@ body{font:14px/1.5 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-sma
 
 header {
   height: 64px;
-  background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0, #960DAB), color-stop(0.5, #27BAD0), color-stop(1, #FA4496));
-  background-image: -moz-linear-gradient(left center, #960DAB 0%, #27BAD0 50%, #FA4496 100%);
+  background: silver;
   .logo {
     float: left;
     height: 64px;
@@ -53,13 +52,13 @@ header {
 
 .content {
   margin: 8px;
-  font-size: 16px;
 }
 menu {
   line-height: 2em;
+  font-size: 16px;
   a, a:active {
     text-decoration: none;
-    color: black;
+    color: grey;
     display: block;
     padding-left: 5px;
   }
@@ -69,13 +68,11 @@ menu {
     color: white;
   }
   li {
-    border-bottom: 1px solid #FF0066;
+    border-bottom: 1px solid grey;
   }
   .button {
-    width: 159px;
     line-height: 2.5em;
-    background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0, #960DAB), color-stop(0.5, #27BAD0), color-stop(1, #FA4496));
-    background-image: -moz-linear-gradient(left center, #960DAB 0%, #27BAD0 50%, #FA4496 100%);
+    background: grey;
     font-weight: bold;
     a {
     color: white;
@@ -83,5 +80,37 @@ menu {
   }
 }
 .rightcolumn {
-  padding-left: 165px;
+  padding-left: 153px;
+  > div {
+    border-left: 1px solid grey;
   }
+  .date {
+    padding: 3px;
+    margin: 0 0 5px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: grey;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+  }
+  li {
+    padding-left: 30px;
+    .time {
+      color: grey;
+    }
+    .user {
+      padding-left: 10px;
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+    }
+    .action {
+      padding-left: 10px;
+    }
+  }
+  li:last-child {
+    margin: 0 0 15px;
+  }
+}
