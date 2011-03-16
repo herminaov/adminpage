@@ -62,8 +62,7 @@ menu {
     padding-left: 5px;
   }
   a:hover {
-    background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0, #960DAB), color-stop(0.5, #27BAD0), color-stop(1, #FA4496));
-    background-image: -moz-linear-gradient(left center, #960DAB 0%, #27BAD0 50%, #FA4496 100%);
+    background: silver;
     color: white;
   }
   li {
@@ -88,7 +87,7 @@ menu {
     margin: 0 0 5px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    background-color: grey;
+    background: grey;
     display: inline-block;
     color: white;
     font-weight: bold;
@@ -108,6 +107,7 @@ menu {
       a {
         text-decoration: none;
         color: blue;
+        border-bottom: 1px solid blue;
       }
     }
     .action {
@@ -124,9 +124,11 @@ menu {
   height: 35px;
   background-color: #dfdfdf;
   display: table;
-  div {
+  a {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+    text-decoration: none;
+    color: black;
   }
 }
